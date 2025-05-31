@@ -226,6 +226,46 @@ footer {
 .background-alt {
   background: #f2f2f5; }
 
+.impressum-container {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.impressum-hover {
+  color: #74808a;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.impressum-box {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: #fff;
+  color: #74808a;
+  border: 1px solid #ccc;
+  padding: 15px;
+  min-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 100;
+  border-radius: 6px;
+  font-size: 0.95em;
+
+}
+
+.impressum-hover:hover .impressum-box,
+.impressum-hover:focus .impressum-box,
+.impressum-box:hover {
+  display: block;
+}
+
 /*
     --------------------------
     ----- 4. Lead Styles -----
