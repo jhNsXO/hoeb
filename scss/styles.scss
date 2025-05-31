@@ -339,12 +339,17 @@ footer {
     background: $background-alt;
 }
 
+.impressum-container {
+  padding-top: 20px;
+  position: relative;
+  align-items: center;
+  height: 100%;
+}
+
 .impressum-hover {
   color: #74808a;
   position: relative;
   cursor: pointer;
-  font-weight: bold;
-  margin-left: 20px;
   display: inline-block;
   font-weight: normal;
 }
@@ -1010,6 +1015,12 @@ footer {
         text-align: center;
     }
 
+    .impressum-box {
+        left: 50% !important;
+        transform: translateX(-50%);
+        max-width: 90vw;
+        box-sizing: border-box;
+    }
 }
 
 // Extra Small Devices

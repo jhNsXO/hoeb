@@ -229,7 +229,6 @@ footer {
 .impressum-container {
   padding-top: 20px;
   position: relative;
-  display: flex;
   align-items: center;
   height: 100%;
 }
@@ -238,7 +237,6 @@ footer {
   color: #74808a;
   position: relative;
   cursor: pointer;
-  margin-left: 20px;
   display: inline-block;
   font-weight: normal;
 }
@@ -735,7 +733,14 @@ footer {
   footer {
     text-align: center; }
   .social {
-    text-align: center; } }
+    text-align: center; }
+  .impressum-box {
+    left: 50% !important;
+    transform: translateX(-50%);
+    max-width: 90vw;
+    box-sizing: border-box;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   #lead-content h1 {
