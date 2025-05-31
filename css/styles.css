@@ -540,7 +540,7 @@ footer {
 #contact-form {
   max-width: 500px;
   margin: 0 auto; }
-  #contact-form input, #contact-form textarea {
+  #contact-form p {
     display: block;
     width: 100%;
     padding: 10px;
