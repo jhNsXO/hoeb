@@ -53,6 +53,15 @@
         }, 500);
     });
 
+    // Scroll to section for lead content links
+    $('#lead-content a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var scrollDistance = $($(this).attr('href')).offset().top;
+        $('html, body').animate({
+            scrollTop: scrollDistance + 'px'
+        }, 500);
+    });
+
     // Create timeline
     $('#experience-timeline').each(function() {
 
