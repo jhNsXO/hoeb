@@ -164,6 +164,15 @@ header {
 
     li {
         display: inline-block;
+
+        &.nav-divider {
+            width: 1px;
+            height: 18px;
+            background: $border;
+            margin: 0 8px;
+            vertical-align: middle;
+            padding: 0;
+        }
     }
 
     a {
@@ -968,6 +977,12 @@ footer {
         li {
             display: block;
             margin-bottom: 10px;
+
+            &.nav-divider {
+                width: 50px;
+                height: 1px;
+                margin: 12px auto;
+            }
         }
     }
 

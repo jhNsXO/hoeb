@@ -99,6 +99,14 @@ header {
     border-bottom-left-radius: 4px; }
   header li {
     display: inline-block; }
+  header li.nav-divider {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background: #dcd9d9;
+    margin: 0 8px;
+    vertical-align: middle;
+    padding: 0; }
   header a {
     display: block;
     color: #41531c;
@@ -712,6 +720,11 @@ footer {
     #menu li {
       display: block;
       margin-bottom: 10px; }
+    #menu li.nav-divider {
+      width: 50px;
+      height: 1px;
+      margin: 12px auto;
+      background: #dcd9d9; }
   #lead-content h1 {
     font-size: 2em; }
   #lead-content h2 {
