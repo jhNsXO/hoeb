@@ -10,13 +10,16 @@
         1. Variables
         2. Global Styles
         3. Lead Styles
-        4. About Styles
-        5. Experience Styles
-        6. Education Styles
-        7. Skills Styles
-        8. Contact Styles
-        9. Impressum Styles
-        10. Media Queries
+        4. Pitch Styles
+        5. Services Styles
+        6. References Styles
+        7. About Styles
+        8. Experience Styles
+        9. Education Styles
+        10. Skills Styles
+        11. Contact Styles
+        12. Impressum Styles
+        13. Media Queries
 */
 
 /*
@@ -313,21 +316,19 @@ footer {
 */
 #lead {
   position: relative;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 1080px;
+  height: auto;
+  min-height: auto;
+  padding: 130px 15px 80px 15px;
   background: url(../images/lead-bg.jpg);
   background-size: cover;
-  padding: 15px;
+  background-position: center;
   overflow: hidden;
+  text-align: center;
 }
 
 #lead-content {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -350,6 +351,10 @@ footer {
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
+}
+
+#lead-content .btn-rounded-white {
+  margin-top: 15px;
 }
 
 #lead-overlay {
@@ -407,8 +412,82 @@ footer {
 }
 
 /*
+    --------------------------
+    ----- 4. Pitch Styles -----
+    --------------------------
+*/
+#pitch {
+  padding: 75px 0 25px 0;
+  text-align: center;
+}
+
+#pitch h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#pitch p {
+  font-size: 1.25em;
+  line-height: 1.6;
+  text-align: justify;
+  text-align-last: center;
+  margin-bottom: 20px;
+}
+
+/*
+    -----------------------------
+    ----- 5. Services Styles -----
+    -----------------------------
+*/
+#services {
+  padding: 50px 0;
+}
+
+#services p {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/*
+    -------------------------------
+    ----- 6. References Styles -----
+    -------------------------------
+*/
+#references {
+  padding: 50px 0;
+}
+
+#references .lead-text {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#references h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#references ul {
+  font-size: 1.1em;
+  line-height: 1.8;
+  list-style-type: none;
+  padding: 0;
+}
+
+#references li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: var(--background);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/*
     ---------------------------
-    ----- 4. About Styles -----
+    ----- 7. About Styles -----
     ---------------------------
 */
 #about {
@@ -418,6 +497,12 @@ footer {
 
 #about h2 {
   color: var(--heading);
+}
+
+#about img {
+  width: 150px;
+  height: 206px;
+  border-radius: 4px;
 }
 
 #about p {
@@ -430,7 +515,7 @@ footer {
 
 /*
     --------------------------------
-    ----- 5. Experience Styles -----
+    ----- 8. Experience Styles -----
     --------------------------------
 */
 #experience {
@@ -539,7 +624,7 @@ footer {
 
 /*
     -------------------------------
-    ----- 6. Education Styles -----
+    ----- 9. Education Styles -----
     -------------------------------
 */
 #education {
@@ -593,7 +678,7 @@ footer {
 
 /*
     -------------------------------
-    ----- 7. Skills Styles -----
+    ----- 10. Skills Styles -----
     -------------------------------
 */
 #skills {
@@ -604,6 +689,10 @@ footer {
 #skills h2 {
   color: var(--heading);
   margin-bottom: 50px;
+}
+
+#skills h2:not(:first-child) {
+  margin-top: 50px;
 }
 
 #skills ul {
@@ -626,7 +715,7 @@ footer {
 
 /*
     -------------------------------
-    ----- 8. Contact Styles -----
+    ----- 11. Contact Styles -----
     -------------------------------
 */
 #contact {
@@ -641,77 +730,31 @@ footer {
   font-weight: 500;
 }
 
-#contact-form {
+#contact-box {
   max-width: 500px;
   margin: 0 auto;
 }
 
-#contact-form p {
+#contact-box p {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border-radius: 4px;
-  border: none;
   margin-bottom: 10px;
   background: var(--base-color-dark);
   color: #fff;
-  transition: 0.5s ease all;
+  font-size: 1.1em;
 }
 
-#contact-form input::-webkit-input-placeholder,
-#contact-form textarea::-webkit-input-placeholder {
+#contact-box a {
   color: #fff;
-}
-
-#contact-form input:-moz-placeholder,
-#contact-form textarea:-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-#contact-form input::-moz-placeholder,
-#contact-form textarea::-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-#contact-form input:-ms-input-placeholder,
-#contact-form textarea:-ms-input-placeholder {
-  color: #fff;
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-  outline: none;
-  background: black;
-}
-
-#contact-form textarea {
-  height: 150px;
-  resize: none;
-}
-
-#contact-form button {
-  display: block;
-  width: 100%;
-  background: var(--background);
-  border-radius: 4px;
-  padding: 5px 10px;
-  border: none;
-  color: var(--base-color);
-  font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: 0.5s ease all;
-}
-
-#contact-form button:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-weight: bold;
 }
 
 /*
-    --------------------------------
-    ----- 9. Impressum Styles -----
-    --------------------------------
+    ---------------------------------
+    ----- 12. Impressum Styles -----
+    ---------------------------------
 */
 #impressum-section {
   padding: 75px 15px;
@@ -774,7 +817,7 @@ footer {
 
 /*
     ------------------------------
-    ----- 10. Media Queries -----
+    ----- 13. Media Queries -----
     ------------------------------
 */
 @media only screen and (max-width: 750px) {
@@ -804,17 +847,7 @@ footer {
 
 @media only screen and (max-width: 992px) {
   #lead {
-    height: auto;
-    min-height: auto;
-    max-height: auto;
-    padding: 100px 15px;
-  }
-
-  #lead-content {
-    position: relative;
-    transform: none;
-    left: auto;
-    top: auto;
+    padding: 100px 15px 60px 15px;
   }
 
   #lead-content h1 {
