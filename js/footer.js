@@ -7,7 +7,7 @@ document.getElementById('footer-placeholder').innerHTML = `
                         Copyright &copy; <span id="current-year">2026</span> Lisa Höbenreich
                     </p>
                     <p>
-                        <a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Smashicons - Flaticon</a>
+                        <a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Magnific - Flaticon</a>
                     </p>
                 </div>
                 <div class="col-sm-2 top">
