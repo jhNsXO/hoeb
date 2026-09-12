@@ -11,6 +11,9 @@
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://www.hoebenreich.com/impressum.html">
 
+    <!-- Language Manager (Cookie-free, anti-flash, auto-injects switcher) -->
+    <script src="js/lang.js"></script>
+
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="shortcut icon" href="favicon.ico">
@@ -29,15 +32,23 @@
     <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+            <span data-lang="en">Close</span>
+            <span data-lang="de">Schließen</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="index.html" class="no-scroll">Home</a>
+                <a href="index.html" class="no-scroll">
+                    <span data-lang="en">Home</span>
+                    <span data-lang="de">Startseite</span>
+                </a>
             </li>
             <li class="nav-divider" aria-hidden="true"></li>
             <li>
-                <a href="about.html" class="no-scroll">About Me</a>
+                <a href="about.html" class="no-scroll">
+                    <span data-lang="en">About Me</span>
+                    <span data-lang="de">Über mich</span>
+                </a>
             </li>
         </ul>
     </header>
@@ -46,7 +57,8 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Lisa Höbenreich, BA MA</h1>
-            <h2>Scientific Editing, Typesetting & Proofreading Services</h2>
+            <h2 data-lang="en">Scientific Editing, Typesetting &amp; Proofreading Services</h2>
+            <h2 data-lang="de">Wissenschaftliches Lektorat, Korrektorat &amp; Buchsatz</h2>
         </div>
         <!-- End #lead-content -->
 

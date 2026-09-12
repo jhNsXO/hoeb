@@ -11,6 +11,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.hoebenreich.com/">
 
+    <!-- Language Manager (Cookie-free, anti-flash, auto-injects switcher) -->
+    <script src="js/lang.js"></script>
+
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Lisa Höbenreich">
@@ -64,6 +67,11 @@
         "postalCode": "8010",
         "addressCountry": "AT"
       },
+      "areaServed": [
+        { "@type": "Country", "name": "Austria" },
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "Switzerland" }
+      ],
       "knowsLanguage": ["de", "en", "fr"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -106,21 +114,35 @@
     <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+            <span data-lang="en">Close</span>
+            <span data-lang="de">Schließen</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#services">Services</a>
+                <a href="#services">
+                    <span data-lang="en">Services</span>
+                    <span data-lang="de">Leistungen</span>
+                </a>
             </li>
             <li>
-                <a href="#references">References</a>
+                <a href="#references">
+                    <span data-lang="en">References</span>
+                    <span data-lang="de">Referenzen</span>
+                </a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    <span data-lang="en">Contact</span>
+                    <span data-lang="de">Kontakt</span>
+                </a>
             </li>
             <li class="nav-divider" aria-hidden="true"></li>
             <li>
-                <a href="about.html" class="no-scroll">About Me</a>
+                <a href="about.html" class="no-scroll">
+                    <span data-lang="en">About Me</span>
+                    <span data-lang="de">Über mich</span>
+                </a>
             </li>
         </ul>
     </header>
@@ -129,8 +151,12 @@
     <section id="lead" aria-label="Introduction">
         <div id="lead-content">
             <h1>Lisa Höbenreich, BA MA</h1>
-            <h2>Scientific Editing, Typesetting &amp; Proofreading Services</h2>
-            <a href="#services" class="btn-rounded-white">View Services</a>
+            <h2 data-lang="en">Scientific Editing, Typesetting &amp; Proofreading Services</h2>
+            <h2 data-lang="de">Wissenschaftliches Lektorat, Korrektorat &amp; Buchsatz</h2>
+            <a href="#services" class="btn-rounded-white">
+                <span data-lang="en">View Services</span>
+                <span data-lang="de">Leistungen ansehen</span>
+            </a>
         </div>
         <!-- End #lead-content -->
 
@@ -147,18 +173,30 @@
 
     <section id="pitch" class="background-alt" aria-label="Overview">
         <div class="container">
-            <h2>Your words, perfected.</h2>
+            <h2 data-lang="en">Your words, perfected.</h2>
+            <h2 data-lang="de">Ihre Texte, perfektioniert.</h2>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <p>
+                    <p data-lang="en">
                         From the first draft to the final layout, I help authors and academics transform their
                         manuscripts into publication-ready books.
                     </p>
-                    <p>
+                    <p data-lang="de">
+                        Vom ersten Manuskriptentwurf bis zum druckreifen Layout unterstütze ich Autorinnen, Autoren
+                        und Forschende dabei, aus ihren Texten publikationsreife Bücher und wissenschaftliche Beiträge
+                        zu gestalten.
+                    </p>
+                    <p data-lang="en">
                         As an independent editor, I offer precise editing and proofreading in both English and German,
                         professional typesetting, and expert index creation. By pairing traditional editorial excellence
                         with cutting-edge editorial software and tools, I ensure your text is sharp, accurate, and
                         beautifully presented.
+                    </p>
+                    <p data-lang="de">
+                        Als selbstständige Lektorin biete ich präzises Lektorat und Korrektorat auf Deutsch und Englisch,
+                        professionellen Buchsatz sowie fachgerechte Registererstellung. Durch die Verbindung
+                        traditioneller editorischer Sorgfalt mit modernen Satz- und Redaktionswerkzeugen stelle ich sicher,
+                        dass Ihr Text präzise, stilsicher und ansprechend präsentiert wird.
                     </p>
                 </div>
             </div>
@@ -167,22 +205,34 @@
 
     <section id="services" aria-label="Services">
         <div class="container">
-            <h2 class="heading">Services</h2>
+            <h2 class="heading">
+                <span data-lang="en">Services</span>
+                <span data-lang="de">Leistungen</span>
+            </h2>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <h3>Editing &amp; Proofreading</h3>
-                    <p>Professional editing and proofreading of German and English texts to
+                    <h3 data-lang="en">Editing &amp; Proofreading</h3>
+                    <h3 data-lang="de">Lektorat &amp; Korrektorat</h3>
+                    <p data-lang="en">Professional editing and proofreading of German and English texts to
                         ensure clarity, coherence, and grammatical correctness.</p>
+                    <p data-lang="de">Professionelles Lektorat und Korrektorat deutscher und englischer Texte für
+                        sprachliche Genauigkeit, logische Kohärenz und grammatikalische Korrektheit.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <h3>Formatting &amp; Typesetting</h3>
-                    <p>Precise formatting and typesetting of scientific articles and books
+                    <h3 data-lang="en">Formatting &amp; Typesetting</h3>
+                    <h3 data-lang="de">Formatierung &amp; Buchsatz</h3>
+                    <p data-lang="en">Precise formatting and typesetting of scientific articles and books
                         according to required publisher guidelines and standards.</p>
+                    <p data-lang="de">Präziser Satz und saubere Formatierung wissenschaftlicher Artikel, Monografien
+                        und Sammelbände nach Verlagsrichtlinien und Zitierstandards.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <h3>Registers &amp; Indexes</h3>
-                    <p>Creation of comprehensive registers and indexes for academic
+                    <h3 data-lang="en">Registers &amp; Indexes</h3>
+                    <h3 data-lang="de">Register &amp; Indizes</h3>
+                    <p data-lang="en">Creation of comprehensive registers and indexes for academic
                         publications, facilitating easy navigation for readers.</p>
+                    <p data-lang="de">Fachgerechte Erstellung umfassender Personen-, Sach- und Ortsregister für
+                        akademische Publikationen zur optimalen Erschließung Ihres Werkes.</p>
                 </div>
             </div>
         </div>
@@ -191,14 +241,22 @@
 
     <section id="references" class="background-alt" aria-label="Reference Works">
         <div class="container">
-            <h2 class="heading">Reference Works</h2>
+            <h2 class="heading">
+                <span data-lang="en">Reference Works</span>
+                <span data-lang="de">Referenzen</span>
+            </h2>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <p class="lead-text">
+                    <p class="lead-text" data-lang="en">
                         <strong>Editing and typesetting works:</strong><br>
                         more than 60 scientific articles and 5 books (with index creation).
                     </p>
-                    <h3>Examples of Published Works</h3>
+                    <p class="lead-text" data-lang="de">
+                        <strong>Lektorats- und Satzarbeiten:</strong><br>
+                        Mehr als 60 wissenschaftliche Beiträge und 5 Monografien / Sammelbände (inkl. Registererstellung).
+                    </p>
+                    <h3 data-lang="en">Examples of Published Works</h3>
+                    <h3 data-lang="de">Beispiele veröffentlichter Werke</h3>
                     <ul>
                         <li>
                             Löschnigg, Martin, and Waldemar Zacharasiewicz, eds. <em>Images of War in the North Atlantic
@@ -225,10 +283,16 @@
     <!-- End #references -->
 
     <section id="contact" aria-label="Contact">
-        <h2>Get in Touch</h2>
+        <h2>
+            <span data-lang="en">Get in Touch</span>
+            <span data-lang="de">Kontakt aufnehmen</span>
+        </h2>
         <div id="contact-box">
-            <p>
+            <p data-lang="en">
                 For more information, or if you have any questions, please feel free to write me an Email at:
+            </p>
+            <p data-lang="de">
+                Für weitere Informationen, ein unverbindliches Angebot oder Fragen stehe ich Ihnen gerne zur Verfügung:
             </p>
             <p>
                 <a href="mailto:lisa@hoebenreich.com">lisa@hoebenreich.com</a>

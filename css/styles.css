@@ -151,6 +151,87 @@ header li.nav-divider {
   padding: 0;
 }
 
+/*
+    Language Switching Rules (Dual-Text)
+*/
+html[lang="en"] [data-lang="de"] {
+  display: none !important;
+}
+
+html[lang="de"] [data-lang="en"] {
+  display: none !important;
+}
+
+/*
+    Top-Right Floating Language Switcher
+*/
+.lang-switch-top {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  z-index: 998;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 3px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--border);
+  gap: 2px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.lang-switch-top .lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  font-size: 0.82em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 16px;
+  border: none;
+  background: transparent;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lang-switch-top .lang-btn:hover {
+  background: #eaedf0;
+  color: var(--base-color);
+  text-decoration: none;
+}
+
+/* Active language styling linked directly to html[lang] */
+html[lang="en"] .lang-switch-top .lang-btn[data-switch="en"],
+html[lang="de"] .lang-switch-top .lang-btn[data-switch="de"] {
+  background: var(--base-color);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: default;
+}
+
+html[lang="en"] .lang-switch-top .lang-btn[data-switch="en"]:hover,
+html[lang="de"] .lang-switch-top .lang-btn[data-switch="de"]:hover {
+  background: var(--base-color);
+  color: #ffffff;
+}
+
+.lang-switch-top .flag-icon {
+  display: inline-block;
+  width: 19px;
+  height: 13px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
 header a {
   display: block;
   color: var(--base-color);
@@ -902,6 +983,11 @@ footer {
     background: var(--border);
   }
 
+  .lang-switch-top {
+    top: 10px;
+    right: 62px;
+  }
+
   #lead-content h1 {
     font-size: 2em;
   }
@@ -944,5 +1030,22 @@ footer {
   #lead-content a {
     font-size: 0.9em;
     padding: 5px 10px;
+  }
+
+  .lang-switch-top {
+    top: 10px;
+    right: 54px;
+    padding: 2px;
+  }
+
+  .lang-switch-top .lang-btn {
+    padding: 4px 6px;
+    font-size: 0.76em;
+    gap: 4px;
+  }
+
+  .lang-switch-top .flag-icon {
+    width: 16px;
+    height: 11px;
   }
 }

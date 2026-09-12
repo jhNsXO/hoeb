@@ -11,6 +11,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.hoebenreich.com/about.html">
 
+    <!-- Language Manager (Cookie-free, anti-flash, auto-injects switcher) -->
+    <script src="js/lang.js"></script>
+
     <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="profile">
     <meta property="og:site_name" content="Lisa Höbenreich">
@@ -73,27 +76,47 @@
     <!-- End #mobile-menu-toggle -->
     <header>
         <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+            <span data-lang="en">Close</span>
+            <span data-lang="de">Schließen</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">About</a>
+                <a href="#about">
+                    <span data-lang="en">About</span>
+                    <span data-lang="de">Über mich</span>
+                </a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience">
+                    <span data-lang="en">Experience</span>
+                    <span data-lang="de">Erfahrung</span>
+                </a>
             </li>
             <li>
-                <a href="#education">Education</a>
+                <a href="#education">
+                    <span data-lang="en">Education</span>
+                    <span data-lang="de">Ausbildung</span>
+                </a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills">
+                    <span data-lang="en">Skills</span>
+                    <span data-lang="de">Fähigkeiten</span>
+                </a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    <span data-lang="en">Contact</span>
+                    <span data-lang="de">Kontakt</span>
+                </a>
             </li>
             <li class="nav-divider" aria-hidden="true"></li>
             <li>
-                <a href="index.html" class="no-scroll">Home</a>
+                <a href="index.html" class="no-scroll">
+                    <span data-lang="en">Home</span>
+                    <span data-lang="de">Startseite</span>
+                </a>
             </li>
         </ul>
     </header>
@@ -102,7 +125,8 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Lisa Höbenreich, BA MA</h1>
-            <h2>Scientific Editing, Typesetting & Proofreading Services</h2>
+            <h2 data-lang="en">Scientific Editing, Typesetting &amp; Proofreading Services</h2>
+            <h2 data-lang="de">Wissenschaftliches Lektorat, Korrektorat &amp; Buchsatz</h2>
         </div>
         <!-- End #lead-content -->
 
@@ -121,23 +145,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-
-                    <img src="pic.png" alt="Lisa Höbenreich, BA MA - Academic Editor and Proofreader" width="150" height="206" loading="eager">
+                    <img src="pic.png" alt="Lisa Höbenreich, BA MA" width="150" height="206" loading="eager">
                     <br>
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading">
+                        <span data-lang="en">About Me</span>
+                        <span data-lang="de">Über mich</span>
+                    </h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
+                    <p data-lang="en">
                         I hold a master's degree in English and American Studies from the University of Graz
                         (graduated with distinction). As the recipient of the Excellence Award in English and American
                         Studies, I provide specialized editorial and typesetting services for
                         scholarly publications.
                     </p>
+                    <p data-lang="de">
+                        Ich habe mein Masterstudium der Anglistik und Amerikanistik an der Karl-Franzens-Universität Graz
+                        mit Auszeichnung abgeschlossen. Als Preisträgerin des Excellence Award in English and American
+                        Studies biete ich spezialisierte Lektorats-, Korrektorats- und Satzarbeiten für
+                        wissenschaftliche Publikationen an.
+                    </p>
                     <br>
-                    <p>
+                    <p data-lang="en">
                         My portfolio includes over 60 scientific articles and multiple books edited, typeset, and
                         indexed for leading institutions, including the Austrian Academy of Sciences (ÖAW). Operating in
                         German and English, I bridge academic rigor with meticulous print and digital layout execution.
+                    </p>
+                    <p data-lang="de">
+                        Mein Portfolio umfasst mehr als 60 wissenschaftliche Beiträge und mehrere Bücher, die ich für
+                        renommierte Einrichtungen wie die Österreichische Akademie der Wissenschaften (ÖAW)
+                        lektoriert, gesetzt und indexiert habe. Mit fließender Kompetenz in Deutsch und Englisch
+                        verbinde ich akademische Genauigkeit mit sorgfältiger Umsetzung im Satz- und Layoutbereich.
                     </p>
                 </div>
             </div>
@@ -146,25 +184,41 @@
     <!-- End #about -->
 
     <section id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+        <h2 class="heading">
+            <span data-lang="en">Experience</span>
+            <span data-lang="de">Erfahrung</span>
+        </h2>
         <div id="experience-timeline">
             <div data-date="2024 – ">
-                <h3>Freelance Editor</h3>
+                <h3 data-lang="en">Freelance Editor</h3>
+                <h3 data-lang="de">Selbstständige Lektorin</h3>
                 <h4>-</h4>
-                <p>
+                <p data-lang="en">
                     Editing and proofreading of German and English texts.
                     <br>
                     Formatting and typesetting of articles and books.
                     <br>
                     Creation of registers and indexes.
                 </p>
+                <p data-lang="de">
+                    Lektorat und Korrektorat deutscher und englischer Texte.
+                    <br>
+                    Formatierung und Buchsatz wissenschaftlicher Beiträge und Bücher.
+                    <br>
+                    Erstellung von Sach-, Personen- und Ortsregistern.
+                </p>
             </div>
 
             <div data-date="August 2023 – ">
-                <h3>ÖAW (Austrian Academy of Sciences)</h3>
-                <h4>Freelance Editor</h4>
-                <p>
-                    Editing and typesetting of scientific articles and books
+                <h3 data-lang="en">ÖAW (Austrian Academy of Sciences)</h3>
+                <h3 data-lang="de">ÖAW (Österreichische Akademie der Wissenschaften)</h3>
+                <h4 data-lang="en">Freelance Editor</h4>
+                <h4 data-lang="de">Freie Lektorin</h4>
+                <p data-lang="en">
+                    Editing and typesetting of scientific articles and books.
+                </p>
+                <p data-lang="de">
+                    Lektorat und Satz wissenschaftlicher Artikel und Bücher.
                 </p>
             </div>
         </div>
@@ -172,17 +226,28 @@
     <!-- End #experience -->
 
     <section id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading">
+            <span data-lang="en">Education</span>
+            <span data-lang="de">Ausbildung</span>
+        </h2>
         <div class="education-block">
-            <h3>University of Graz</h3>
+            <h3 data-lang="en">University of Graz</h3>
+            <h3 data-lang="de">Karl-Franzens-Universität Graz</h3>
             <span class="education-date">2023</span>
-            <h4>Master of Arts in English and American Studies</h4>
-            <p>
+            <h4 data-lang="en">Master of Arts in English and American Studies</h4>
+            <h4 data-lang="de">Master of Arts (MA) in Anglistik und Amerikanistik</h4>
+            <p data-lang="en">
                 Master thesis entitled “Ageing in Indigenous Literature: The Depiction of Aboriginal Older Adults in
                 Native Canadian Short Stories”.
             </p>
-            <p>
+            <p data-lang="de">
+                Masterarbeit: „Ageing in Indigenous Literature: The Depiction of Aboriginal Older Adults in Native Canadian Short Stories“.
+            </p>
+            <p data-lang="en">
                 Passed with distinction.
+            </p>
+            <p data-lang="de">
+                Mit Auszeichnung bestanden.
             </p>
         </div>
         <!-- End .education-block -->
@@ -190,14 +255,22 @@
     <!-- End #education -->
 
     <section id="skills">
-        <h2 class="heading">Language Skills</h2>
+        <h2 class="heading">
+            <span data-lang="en">Language Skills</span>
+            <span data-lang="de">Sprachkenntnisse</span>
+        </h2>
         <ul>
-            <li>English C2</li>
-            <li>German C2</li>
-            <li>French B2</li>
-
+            <li data-lang="en">English C2</li>
+            <li data-lang="de">Englisch C2</li>
+            <li data-lang="en">German C2</li>
+            <li data-lang="de">Deutsch C2</li>
+            <li data-lang="en">French B2</li>
+            <li data-lang="de">Französisch B2</li>
         </ul>
-        <h2 class="heading">Technical Skills</h2>
+        <h2 class="heading">
+            <span data-lang="en">Technical Skills</span>
+            <span data-lang="de">Technische Kenntnisse</span>
+        </h2>
         <ul>
             <li>Office 365</li>
             <li>SAP</li>
@@ -208,20 +281,30 @@
             <li>Teams</li>
             <li>Moodle</li>
         </ul>
-        <h2 class="heading">Soft Skills</h2>
+        <h2 class="heading">
+            <span data-lang="en">Soft Skills</span>
+            <span data-lang="de">Soft Skills</span>
+        </h2>
         <ul>
-            <li>Critical Thinking</li>
-            <li>Scheduling & Time Management</li>
-            <!-- <li>Competent & critical use of AI-Tools</li> -->
+            <li data-lang="en">Critical Thinking</li>
+            <li data-lang="de">Kritisches Denken</li>
+            <li data-lang="en">Scheduling &amp; Time Management</li>
+            <li data-lang="de">Zeitmanagement &amp; Organisation</li>
         </ul>
     </section>
     <!-- End #skills -->
 
     <section id="contact">
-        <h2>Get in Touch</h2>
+        <h2>
+            <span data-lang="en">Get in Touch</span>
+            <span data-lang="de">Kontakt aufnehmen</span>
+        </h2>
         <div id="contact-box">
-            <p>
+            <p data-lang="en">
                 For more information, or if you have any questions, please feel free to write me an Email at:
+            </p>
+            <p data-lang="de">
+                Für weitere Informationen oder unverbindliche Anfragen stehe ich Ihnen gerne per E-Mail zur Verfügung:
             </p>
             <p>
                 <a href="mailto:lisa@hoebenreich.com">lisa@hoebenreich.com</a>
