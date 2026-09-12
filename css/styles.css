@@ -154,7 +154,8 @@ header li.nav-divider {
 /*
     Language Switching Rules (Dual-Text)
 */
-html[lang="en"] [data-lang="de"] {
+html[lang="en"] [data-lang="de"],
+html:not([lang="de"]) [data-lang="de"] {
   display: none !important;
 }
 
@@ -208,6 +209,7 @@ html[lang="de"] [data-lang="en"] {
 
 /* Active language styling linked directly to html[lang] */
 html[lang="en"] .lang-switch-top .lang-btn[data-switch="en"],
+html:not([lang="de"]) .lang-switch-top .lang-btn[data-switch="en"],
 html[lang="de"] .lang-switch-top .lang-btn[data-switch="de"] {
   background: var(--base-color);
   color: #ffffff;
@@ -216,6 +218,7 @@ html[lang="de"] .lang-switch-top .lang-btn[data-switch="de"] {
 }
 
 html[lang="en"] .lang-switch-top .lang-btn[data-switch="en"]:hover,
+html:not([lang="de"]) .lang-switch-top .lang-btn[data-switch="en"]:hover,
 html[lang="de"] .lang-switch-top .lang-btn[data-switch="de"]:hover {
   background: var(--base-color);
   color: #ffffff;
