@@ -15,7 +15,8 @@
         6. Education Styles
         7. Skills Styles
         8. Contact Styles
-        9. Media Queries
+        9. Impressum Styles
+        10. Media Queries
 */
 
 /*
@@ -294,39 +295,15 @@ footer {
 
 .impressum-container {
   padding-top: 20px;
-  position: relative;
-  align-items: center;
-  height: 100%;
+  text-align: right;
 }
 
-.impressum-hover {
+.impressum-container a {
   color: var(--text);
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: normal;
 }
 
-.impressum-box {
-  display: none;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  background: var(--background);
-  color: var(--text);
-  border: 1px solid #ccc;
-  padding: 15px;
-  min-width: 400px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 100;
-  border-radius: 6px;
-  font-size: 0.95em;
-}
-
-.impressum-hover:hover .impressum-box,
-.impressum-hover:focus .impressum-box,
-.impressum-box:hover {
-  display: block;
+.impressum-container a:hover {
+  color: var(--base-color);
 }
 
 /*
@@ -732,9 +709,73 @@ footer {
 }
 
 /*
-    -----------------------------
-    ----- 9. Media Queries -----
-    -----------------------------
+    --------------------------------
+    ----- 9. Impressum Styles -----
+    --------------------------------
+*/
+#impressum-section {
+  padding: 75px 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+#impressum-section h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--heading);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.impressum-card {
+  background: var(--background);
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.impressum-contact {
+  font-size: 1.05em;
+  line-height: 1.8;
+}
+
+.impressum-contact p {
+  margin-bottom: 8px;
+}
+
+.impressum-contact p:last-child {
+  margin-bottom: 0;
+}
+
+.impressum-contact a {
+  color: var(--base-color);
+}
+
+.impressum-disclaimer {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.impressum-disclaimer h4 {
+  font-size: 1.1em;
+  color: var(--heading);
+  margin-bottom: 10px;
+}
+
+.impressum-disclaimer p {
+  margin-bottom: 15px;
+}
+
+.impressum-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+    ------------------------------
+    ----- 10. Media Queries -----
+    ------------------------------
 */
 @media only screen and (max-width: 750px) {
 
@@ -853,11 +894,8 @@ footer {
     text-align: center;
   }
 
-  .impressum-box {
-    left: 50% !important;
-    transform: translateX(-50%);
-    max-width: 90vw;
-    box-sizing: border-box;
+  .impressum-container {
+    text-align: center;
   }
 }
 

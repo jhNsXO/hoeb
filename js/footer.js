@@ -16,15 +16,9 @@ document.getElementById('footer-placeholder').innerHTML = `
                     </span>
                 </div>
                 <div class="col-sm-5 impressum-container">
-                    <span class="impressum-hover">
-                        <p>Impressum</p>
-                        <div class="impressum-box">
-                            <strong>Contact Information</strong><br>
-                            Lisa Höbenreich<br>
-                            Email: <a href="mailto:lisa@hoebenreich.com">lisa@hoebenreich.com</a><br>
-                            Address: 8700, Leoben
-                        </div>
-                    </span>
+                    <p>
+                        <a href="impressum.html">Impressum</a>
+                    </p>
                 </div>
             </div>
         </div>
