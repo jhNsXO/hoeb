@@ -98,12 +98,4 @@
         $('header, body').removeClass('active');
     });
 
-    // Load additional projects
-    $('#view-more-projects').click(function(e){
-        e.preventDefault();
-        $(this).fadeOut(300, function() {
-            $('#more-projects').fadeIn(300);
-        });
-    });
-
 })(jQuery);
