@@ -502,6 +502,7 @@ footer {
     p {
         color: $text;
         margin: 0;
+        text-align: justify;
     }
 }
 
@@ -944,7 +945,7 @@ footer {
         text-align: center;
 
         p {
-            text-align: left;
+            text-align: justify;
         }
     }
 
