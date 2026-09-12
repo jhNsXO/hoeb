@@ -17,7 +17,10 @@ document.getElementById('footer-placeholder').innerHTML = `
                 </div>
                 <div class="col-sm-5 impressum-container">
                     <p>
-                        <a href="impressum.html">Impressum</a>
+                        <a href="impressum.html">
+                            <span data-lang="en">Legal Notice</span>
+                            <span data-lang="de">Impressum</span>
+                        </a>
                     </p>
                 </div>
             </div>
