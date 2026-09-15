@@ -19,29 +19,17 @@
 
         const header = document.querySelector('header');
 
-        // Animate to section when nav is clicked
+        // Close mobile menu when nav link is clicked
         document.querySelectorAll('header a').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                if (this.classList.contains('no-scroll')) return;
-
-                const targetId = this.getAttribute('href');
-                if (targetId && targetId.startsWith('#')) {
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth' });
-
-                        // Hide the menu once clicked if mobile
-                        if (header && header.classList.contains('active')) {
-                            header.classList.remove('active');
-                            document.body.classList.remove('active');
-                        }
-                    }
+            link.addEventListener('click', function() {
+                if (header && header.classList.contains('active')) {
+                    header.classList.remove('active');
+                    document.body.classList.remove('active');
                 }
             });
         });
 
-        // Scroll to top (delegated for dynamically loaded footer)
+        // Scroll to top
         document.addEventListener('click', function(e) {
             const toTop = e.target.closest('#to-top');
             if (toTop) {
@@ -61,20 +49,6 @@
             });
         }
 
-        // Scroll to section for lead content links
-        document.querySelectorAll('#lead-content a[href^="#"]').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId) {
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
-            });
-        });
-
         // Create timeline
         const timeline = document.getElementById('experience-timeline');
         if (timeline) {
@@ -90,7 +64,7 @@
 
                 const icon = document.createElement('div');
                 icon.className = 'vtimeline-icon';
-                icon.innerHTML = '<i class="fa fa-map-marker"></i>';
+                icon.innerHTML = '<svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>';
                 point.appendChild(icon);
 
                 const vblock = document.createElement('div');
