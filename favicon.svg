@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg-color: #ffffff;
+      --monogram-color: #41531c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #41531c;
+        --monogram-color: #ffffff;
+      }
+    }
+    .bg {
+      fill: var(--bg-color);
+    }
+    .monogram {
+      fill: var(--monogram-color);
+    }
+  </style>
+  <rect class="bg" width="256" height="256"/>
+  <g class="monogram" transform="translate(34, 36)">
+    <!-- Letter L -->
+    <path d="M0 0h31v154h103v30H0Z"/>
+    <!-- Letter H -->
+    <path d="M54 0h31v69h72V0h31v184h-31V99H85v37H54Z"/>
+  </g>
+</svg>
